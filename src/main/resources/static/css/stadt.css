@@ -1,0 +1,84 @@
+body{
+	background-color: black;
+}
+main {
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.uberschrift{
+	color: #dbdedf; 
+	font-family : "Poppins", sans-serif;
+	font-style: italic;
+	font-family: "Poppins", sans-serif;
+}
+
+
+
+.hero-container-alleStdte{
+	background-color: #dbdedf;
+	display: flex;
+	flex-direction: column;
+	width: 1120px;
+	height: 1120px;
+	margin-bottom: 10px;
+	
+}
+
+.stadtReihe {
+	display: flex;
+	flex-direction: row;
+	margin-left: 10x;
+	margin-right: 10px;
+}
+
+.container-Stadt {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	width: 360px;
+	height: 360px;
+	background-color: white;
+	margin-left: 10px;
+}
+
+.stadt3Reihe {
+	display: flex;
+	flex-direction: row;
+	margin-left: 180px;
+	margin-right: 50px;
+	
+}
+
+.bild {
+	width: 360px;
+	height: 180px;
+}
+
+.bild img {
+	max-width: 360px;
+	min-width: 100%;
+	aspect-ratio: 16/9;
+	transition: transform 1s;
+	
+}
+.bild img:hover,
+.bild img:focus {
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1.3);
+}
+.text {
+	display: flex;
+	flex-direction: column;
+	width: 360px;
+	height: 180px;
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #696868;
+	font-size: 15px;
+	font-family: "Poppins", sans-serif;
+	font-style: italic;
+}

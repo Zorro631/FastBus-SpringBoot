@@ -1,0 +1,220 @@
+body{
+   font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+/*     height: 100vh; */
+
+}
+main{
+	position: relative;
+    min-height: 72vh;
+    flex-direction: row;
+}
+.ObersterContainer {
+  position: relative;
+/*   min-height: 100vh; */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+/*   margin-left: 300px; */
+/*   margin-bottom: 50px; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form{
+	
+	margin-bottom: 20px;
+}
+.header {
+  width: 41.5%;
+  display: flex;
+  align-items: center;
+
+  height: 100px;
+  justify-content: flex-start;
+}
+
+/* form { */
+/*   display: flex; */
+/*   justify-content: center; */
+/*   flex-direction: column; */
+/* } */
+.content {
+  width: 80%;
+  height: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-Content {
+  display: flex;
+/*   justify-content: space-between; */
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.vor-Nachname {
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+.vor-Nachname .vorname,
+.vor-Nachname .nachname {
+  display: flex;
+  flex-direction: column;
+}
+
+.nachname {
+  margin-left: 20px;
+}
+.vor-Nachname input {
+  width: 300px;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+}
+.adresse {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+}
+.stadt-plz {
+  display: flex;
+  flex-direction: row;
+}
+.stadt {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  margin-left: 20px;
+}
+.plz {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+}
+.plz input {
+  width: 100px;
+}
+
+.zahlung {
+}
+
+.kontoname {
+  display: flex;
+  flex-direction: column;
+  height: 55px;
+  width: 200px;
+}
+.iban-bic {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 400px;
+}
+
+.btnKasse {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  margin-top: 20px;
+}
+.btnKasse:hover {
+  background-color: #0056b3; /* Hintergrundfarbe bei Hover */
+}
+
+.verbindungsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 380px;
+  border-radius: 20px;
+  background-color: white;
+  margin-left: 50px;
+  margin-top: 90px;
+  box-shadow: 2px 2px 2px 2px gray;
+}
+
+.überschrift {
+  display: flex;
+  width: 350px;
+  height: 60px;
+  border-bottom: 4px solid #ccc;
+}
+.überschrift h1 {
+  color: rgb(102, 102, 102);
+  font-size: 22px;
+  margin-left: 20px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 180px;
+}
+.datum {
+  height: 10px;
+}
+.datum h4 {
+  margin-top: 0px;
+  font-size: 14px;
+}
+.route-Container {
+  display: flex;
+  flex-direction: row;
+}
+
+.bild-route img {
+  height: 63px;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.busBild img {
+  width: 200px;
+  height: 53px;
+  margin-top: 15px;
+}
+.busBild {
+  margin-top: 5px;
+  border-bottom: 3px solid #2d2d2d;
+  border-top: 3px solid #2d2d2d;
+}
+
+.gesamtpreis {
+  display: flex;
+  margin-left: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+.personen {
+  display: flex;
+  margin-top: 22px;
+  margin-left: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+.summe {
+  margin-left: 70px;
+}
+.alleDatum{
+	margin-left: 20%;
+}
+

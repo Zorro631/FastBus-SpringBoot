@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="../static/css/main1.0.css" />
+    <link type="text/css" rel="stylesheet" href="../static/css/main2.0.css" />
+    <script type="text/javascript" src="../static/js/switch.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:ital,wght@0,200;0,500;1,100;1,200&display=swap"
+          rel="stylesheet" />
+</head>
+<body>
+<form action="./routesPage.html" method="get" onsubmit="return checkSelbeStadt(this)">
+    <div class="hero-container">
+        <div class="hero-image-container"></div>
+        <div class="hero-content">
+            <div class="hero-search-box">
+                <div class="search-box-all-items">
+                    <div class="search-box-header">
+                        <h2>Jetzt Verbindung suchen</h2>
+                    </div>
+                    <div class="searchbar-box-main">
+                        <div class="start-end">
+                            <div class="start">
+                                <div class="custom-select" style="width:150px;">
+                                    <select name="departure" id="departure" placeholder="Von..." required>
+                                        <option value="" disabled selected>Von...</option>
+                                        <option value="Berlin">Berlin</option>
+                                        <option value="Düsseldorf">Düsseldorf</option>
+                                        <option value="Frankfurt">Frankfurt</option>
+                                        <option value="Hamburg">Hamburg</option>
+                                        <option value="Leipzig">Leipzig</option>
+                                        <option value="Mannheim">Mannheim</option>
+                                        <option value="München">München</option>
+                                        <option value="Stuttgart">Stuttgart</option>
+                                    </select>
+                                </div>
+                                <!-- inputStart Parameter erzeugen -->
+                                <div class="search"></div>
+                            </div>
+                            &nbsp;<label><img id="swap" width="25px" src="../static/img/swap.png" title="swap"
+                                              onclick="switchIt();"/></label>
+                            <div class="end">
+                                <div class="custom-select" style="width:150px;">
+                                    <select name="destination" id="destination" placeholder="Nach..." required>
+                                        <option value="" disabled selected>Nach...</option>
+                                        <option value="Berlin">Berlin</option>
+                                        <option value="Düsseldorf">Düsseldorf</option>
+                                        <option value="Frankfurt">Frankfurt</option>
+                                        <option value="Hamburg">Hamburg</option>
+                                        <option value="Leipzig">Leipzig</option>
+                                        <option value="Mannheim">Mannheim</option>
+                                        <option value="München">München</option>
+                                        <option value="Stuttgart">Stuttgart</option>
+                                    </select>
+                                </div>
+                                <!-- inputEnd Parameter erzeugen -->
+                            </div>
+                        </div>
+                        <div class="date">
+                            <input type="date" name="date" class="date" min="2023-09-15" id="dateInput" required
+                                   onclick="datum();"/>
+                        </div>
+                        <div class="quani">
+                            <img class="benutzer" src="../static/img/benutzer.png"/>
+                            <input id="quantity" max="50" min="1" value="1" name="quantity" type="number"/>
+                        </div>
+                        <div class="submitContainer">
+                            <button type="submit" name="btnVerbindung" class="subbutton" value="Suchen"
+                                    onclick="setButtonClicked(this.name)">Suchen
+                            </button>
+                            <!-- null check -->
+                            <!-- <img class='fastbusImg' src='img/Fast-Bus.png' />-->
+                        </div>
+                    </div>
+                    <p id="selbeStadtMsg" class="fehlerfeld"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,171 @@
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	/*   height: 170vh; */
+	flex: 1;
+}
+
+body {
+	/* background-color: #8d959c; */
+	background-color: #171717;
+	height: 100vh; /* Vollbildhöhe */
+}
+
+.hero-image-container {
+	width: 100%;
+	background-image: url("../img/fastBusBILD2.0.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 40vh;
+	position: relative;
+}
+
+.hero-content {
+	position: relative;
+}
+
+.hero-search-box {
+	position: absolute;
+	height: 150px;
+	width: 60%;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	box-shadow: 0px 2px 4px 2px rgba(255, 255, 255, 0.3);
+	border-radius: 10px;
+}
+
+.searchbar-box-main {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 60%;
+	flex-wrap: wrap;
+	/* Hinzufügeng von flex-wrap, um das Umbruchverhalten zu steuern */
+}
+
+.search-box-all-items {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	height: 100%;
+	margin-left: 2rem;
+	/*overflow-y: auto; /* Scrollen, wenn der Inhalt die Höhe überschreitet */
+}
+
+.search-box-all-items select {
+	height: 30px;
+	border: 3px solid gray;
+	border-radius: 5px;
+}
+
+.search-box-all-items input {
+	height: 20px;
+	border: 3px solid gray;
+	border-radius: 5px;
+}
+
+.search-box-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 40%;
+	border-bottom: 1px solid #aaa;
+}
+
+.search-box-header h2 {
+	color: #7a8288;
+}
+
+.searchbar-box-main {
+	display: flex;
+	align-items: center;
+	height: 60%;
+}
+
+.start-end {
+	display: flex;
+}
+
+.start-end div {
+	display: flex;
+	flex-direction: column;
+	margin-left: 5px;
+}
+/* .date { */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   margin-left: 10px; */
+/* } */
+.date input {
+	width: 100px;
+	border: 3px solid gray;
+	border-radius: 20px;
+	margin-left: 10px;
+	height: 30px;
+}
+
+.quani {
+	display: flex;
+	margin-left: 40px;
+}
+
+.benutzer {
+	margin-right: 5px; width : 27px;
+	height: 27px;
+	width: 27px;
+}
+
+.submitContainer {
+	margin-left: 80px;
+	display: flex;
+	align-items: center;
+	/* Entfernen Sie die feste Breite und Höhe */
+	flex-grow: 1;
+	/* Der Container vergrößert sich, um den verfügbaren Platz zu füllen */
+}
+
+.subbutton {
+	padding: 14px 40px;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	height: 15px;
+	box-shadow: 2px 2px 2px 1px rgb(131, 134, 134);
+	border: 1px solid gray;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.subbutton:hover {
+	background-color: rgb(69, 69, 68);
+	color: rgb(246, 244, 248);
+	transition: all 0.5s ease 0s;
+}
+
+.fastbusImg {
+	margin-left: 10px;
+	width: 100px;
+	height: 40px;
+}
+
+.swap {
+	position: relative;
+	top: -30px; /* Anpassen, um es über den Inputs anzuzeigen */
+	left: 0;
+	transform: translateX(0);
+	z-index: 1; /* Stelle sicher, dass es über den Inputs liegt */
+	padding: 5px 10px; /* Kleinere Abmessungen */
+	font-size: 14px; /* Kleinere Schriftgröße */
+}
+
+.fehlerfeld {
+	color: red;
+}

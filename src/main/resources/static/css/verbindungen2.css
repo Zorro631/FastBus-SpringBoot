@@ -1,0 +1,262 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  height: 170vh;
+}
+body {
+  /* background-color: #8d959c; */
+  background-color: #171717;
+  height: 100vh; /* Vollbildhöhe */
+}
+.hero-image-container {
+  width: 100%;
+  background-image: url("../img/fastBusBILD2.0.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  position: relative;
+}
+.hero-content {
+  position: relative;
+}
+.hero-search-box {
+  position: absolute;
+  height: 20vh;
+  width: 60%;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0px 2px 4px 2px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.searchbar-box-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60%;
+  flex-wrap: wrap; /* Hinzufügen von flex-wrap, um das Umbruchverhalten zu steuern */
+}
+.search-box-all-items {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  margin-left: 2rem;
+  /*overflow-y: auto; /* Scrollen, wenn der Inhalt die Höhe überschreitet */
+}
+.search-box-all-items input {
+  height: 20px;
+  border: 3px solid gray;
+  border-radius: 5px;
+}
+.search-box-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 40%;
+  border-bottom: 1px solid #aaa;
+}
+.search-box-header h2 {
+  color: #7a8288;
+}
+.searchbar-box-main {
+  display: flex;
+  align-items: center;
+  height: 60%;
+}
+
+.start-end {
+  display: flex;
+}
+.start-end div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.date {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.date input {
+  width: 150px;
+  border: 3px solid gray;
+  border-radius: 20px;
+  height: 30px;
+}
+.submitContainer {
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  /* Entfernen Sie die feste Breite und Höhe */
+  flex-grow: 1; /* Der Container vergrößert sich, um den verfügbaren Platz zu füllen */
+}
+.subbutton {
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  height: 15px;
+  box-shadow: 2px 2px 2px 1px rgb(131, 134, 134);
+  border: 1px solid gray;
+  font-size: 20px;
+  cursor: pointer;
+}
+.subbutton:hover {
+  background-color: rgb(69, 69, 68);
+  color: rgb(246, 244, 248);
+  transition: all 0.5s ease 0s;
+}
+.fastbusImg {
+  margin-left: 10px;
+  width: 100px;
+  height: 40px;
+}
+
+
+
+
+/*                   vornachtagbox               */
+.vornachtagbox {
+  position: relative;
+  margin-top: 30px;
+  height: 50px;
+/*   width: 1200px; */
+  width: 60%;
+  left: 50%;
+/*   left: 100vh; */
+  transform: translate(-50%, -50%);
+  background-color: white;
+  /* box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.3); */
+  border-radius: 10px;
+}
+
+.vornachtag {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: space-between;
+  /* padding: 5px; */
+}
+
+.vornachtag div {
+  display: flex;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.vornachtag a {
+  /* font-family: "Open Sans", sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+  text-decoration: none;
+
+
+}
+
+/*                   Verbindungsbox               */
+.verbindungsbox {
+  position: relative;
+  margin-top: 70px;
+  /* padding-top: 30px; */
+  /* height: 20vh; */
+  height: 190px;
+  /* width:125vh; */
+/*   width: 1200px; */
+  width: 60%;
+   left: 50%;
+/*   left: 100vh; */
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.vObenUnten {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.vObenUnten div {
+  /* margin: auto; */
+  margin: 4px;
+
+  /* font-size: 20px; */
+}
+
+.vBoxOben {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #aaa;
+  justify-content: space-between;
+}
+
+.vUhrzeitStadt {
+  display: flex;
+  flex-direction: column;
+}
+
+.vUhrzeitStadtO {
+  display: flex;
+  flex-direction: row;
+}
+
+.vUhrzeit {
+  color: #7a8288;
+  /* font-weight: bold; */
+  font-size: 25px;
+}
+
+.vStadt {
+  display: flex;
+  /* margin: auto; */
+  align-items: center;
+}
+
+.vDauer {
+  display: flex;
+  /* margin: auto; */
+  align-items: center;
+  /* vertical-align: middle; */
+  font-size: 30px;
+  font-weight: bold;
+  /* padding-right: 30px; */
+}
+
+.vBoxUnten {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.vPlaetzeFrei {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.vPreisButton {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  /* font-weight: bold; */
+}
+
+.subbutton {
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  height: 15px;
+  box-shadow: 2px 2px 2px 1px rgb(131, 134, 134);
+  border: 1px solid gray;
+  font-size: 20px;
+  cursor: pointer;
+}

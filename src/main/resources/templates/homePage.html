@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FastBus</title>
+
+    <link type="text/css" rel="stylesheet" href="../static/css/main1.0.css" />
+    <link type="text/css" rel="stylesheet" href="../static/css/main2.0.css" />
+    <script type="text/javascript" src="../static/js/switch.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:ital,wght@0,200;0,500;1,100;1,200&display=swap"
+            rel="stylesheet" />
+</head>
+<body>
+<main>
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("navComponent.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+
+    <!--search component-->
+    <div id="search-placeholder">
+
+    </div>
+
+    <script>
+        $(function(){
+            $("#search-placeholder").load("searchComponent.html");
+        });
+    </script>
+    <!--end of search component-->
+
+    <article>
+        <div class="content-Body">
+            <header class="überschrift">
+                <h1>Die meist besuchten Städte Deutschlands</h1>
+            </header>
+            <div class="herocontainer-FürAlleStädte">
+                <div class="stadtContainer">
+                    <div class="stadt">
+                        <a class="stadt-imgContainer">
+                            <span>Berlin</span>
+                            <img src="../static/img/berlin.jpeg" name="Berlin" onclick="stadt(this.name);"/>
+                        </a>
+                    </div>
+                    <div class="stadt">
+                        <a class="stadt-imgContainer">
+                            <span>München</span>
+                            <img src="../static/img/muenchen.jpeg" name="München" onclick="stadt(this.name);"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="stadtContainer">
+                    <div class="stadt">
+                        <a class="stadt-imgContainer">
+                            <span>Frankfurt</span>
+                            <img src="../static/img/frankfurt.jpeg" name="Frankfurt" onclick="stadt(this.name);"/>
+                        </a>
+                    </div>
+                    <div class="stadt">
+                        <a class="stadt-imgContainer">
+                            <span>Hamburg</span>
+                            <img src="../static/img/hamburg.jpeg" name="Hamburg" onclick="stadt(this.name);"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!--Footer-->
+    <div id="footer-placeholder">
+
+    </div>
+
+    <script>
+        $(function(){
+            $("#footer-placeholder").load("footerComponent.html");
+        });
+    </script>
+    <!--end of Footer-->
+</main>
+</body>
+</html>

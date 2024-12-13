@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+}
+
+.fastBus {
+    font-family : "Poppins", sans-serif;
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    /*   justify-content:space-between; */
+    align-items: center;
+    /*background-color: #8d959c;tst */
+    background-color: #33383b;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    margin-left: 7rem;
+}
+
+.logolink {
+    text-decoration: underline;
+    color: white;
+}
+.logolink img{
+    width: 150px;
+}
+
+.logo h1 {
+    color: white;
+    text-decoration: none;
+}
+
+.divLinkAnmelden {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+
+.divLinkAnmelden ul {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    list-style-type: none;
+    color: white;
+    list-style: none;
+    justify-content: center;
+}
+
+.divLinkAnmelden li {
+    margin-right: 2rem;
+}
+
+.divLinkAnmelden a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+.divLinkAnmelden a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.divLinkAnmelden a::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fbfbfb;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+.divLinkAnmelden a:hover::before {
+    transform: scaleX(1);
+}
+
+.divLink {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+
+.divLink ul {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    list-style-type: none;
+    color: white;
+    list-style: none;
+    justify-content: center;
+}
+
+.divLink li {
+    margin-right: 2rem;
+}
+
+.divLink a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+.divLink a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.divLink a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fbfbfb;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+
+.divLink a:hover::before {
+    transform: scaleX(1);
+}
+
+.divLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 13px;
+    margin-right: 10rem;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+.divLogin:hover {
+    background-color: #000000;
+    transition: all 1s ease 0s;
+}
+
+.anmelden {
+    display: flex;
+    padding: 9px 25px;
+    background-color: #1f1e1e;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.anmelden p1 {
+    text-decoration: none;
+    margin-left: 8px;
+    color: white;
+}
+
+#divLogin a {
+    color: rgb(22, 19, 19);
+    position: relative;
+    text-decoration: none;
+}
+
+#divLogin a:hover {
+    color: #ffffff;
+}
+
+.divLogout {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 13px;
+    margin-right: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+.divLogout:hover {
+    background-color: #000000;
+    transition: all 1s ease 0s;
+}
+
+.abmelden {
+    display: flex;
+    padding: 10px 25px;
+    background-color: #1f1e1e;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.abmelden p1 {
+    text-decoration: none;
+    margin-left: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.Profilname {
+    font-size: 18px;
+    font-weight: bold;
+    width: auto;
+    color: rgb(255, 204, 204);
+    margin-right: 2rem;
+    white-space: nowrap;
+}

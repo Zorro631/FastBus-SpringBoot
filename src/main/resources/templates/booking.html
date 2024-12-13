@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buchung</title>
+    <link type="text/css" rel="stylesheet" href="../static/css/main1.0.css"/>
+    <link type="text/css" rel="stylesheet" href="../static/css/rechnung.css"/>
+    <script type="text/javascript" src="../static/js/switch.js"></script>
+    <script type="text/javascript" src="../static/js/buchung.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+    $(function () {
+        $("#nav-placeholder").load("navComponent.html");
+    });
+</script>
+<!--end of Navigation bar-->
+<main>
+<div class="ObersterContainer">
+
+<form action="#" method="get">
+    <div class="container">
+        <div class="zahlungsadresse">
+
+            <div class="header">
+                <h1>Zahlungsadresse</h1>
+            </div>
+
+            <div class="main-Content">
+                <div class="vor-Nachname">
+                    <div class="vorname">
+                        <label class="vorname">Vorname </label> <input type="text"
+                                                                       name="vorname"
+                                                                       value='<jsp:getProperty name="loginBean" property="vorname"/>'/>
+                    </div>
+                    <div class="nachname">
+                        <label>Nachname </label> <input type="text" name="nachname"
+                                                        value='<jsp:getProperty name="loginBean" property="nachname" />'/>
+                    </div>
+                </div>
+                <div class="email">
+                    <label>Email </label> <input type="text" name="email"
+                                                 value='<jsp:getProperty name="loginBean" property="email"/>'/>
+                </div>
+                <div class="adresse">
+                    <label>Stra&szlig;e und Hausnummer </label> <input type="text"
+                                                                       name="adresse" value="" required/>
+                </div>
+                <div class="stadt-plz">
+                    <div class="plz">
+                        <label>PLZ </label> <input type="text" name="plz" value=""
+                                                   pattern="[0-9]{5}" required/>
+                    </div>
+                    <div class="stadt">
+                        <label>Stadt </label> <input type="text" name="stadt" value=""
+                                                     required/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="zahlung">
+
+                <div class="zwischen-Header">
+                    <h1>SEPA-Lastschrift</h1>
+                </div>
+
+                <div class="kontoname">
+                    <label>Kontoname </label> <input type="text" name="nameKonto"
+                                                     value="" required/>
+                </div>
+                <div class="iban-bic">
+                    <label>IBAN </label> <input type="text" name="iban" value=""
+                                                required minlength="22"/>
+                </div>
+
+                <div class="iban-bic">
+                    <label>BIC </label> <input type="text" name="bic" value=""
+                                               minlength="8" required/>
+                </div>
+                <div class="kasse">
+                    <button type="submit" name="btnJetztKaufen" value="jetzt kaufen"
+                            class="btnKasse">Jetzt kaufen
+                    </button>
+                </div>
+            </div>
+        </div>
+        <h2 style="color: red">
+            <jsp:getProperty name="msgBean"
+                             property="actionMsg"/>
+        </h2>
+        <h2>
+            <jsp:getProperty name="msgBean" property="informationsMsg"/>
+        </h2>
+    </div>
+</form>
+
+<div class="verbindungsContainer">
+
+</div>
+
+</div>
+</main>
+<!--Footer-->
+<div id="footer-placeholder">
+
+</div>
+
+<script>
+    $(function () {
+        $("#footer-placeholder").load("footerComponent.html");
+    });
+</script>
+<!--end of Footer-->
+</body>
+</html>

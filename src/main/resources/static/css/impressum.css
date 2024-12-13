@@ -1,0 +1,54 @@
+@charset "ISO-8859-1";
+*{
+    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+
+}
+.headline{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    margin-top: 2%;
+}
+.body{
+
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    flex: 1;
+    font-size: large;
+    max-width: 800px;
+    min-width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.containerInhalt{
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 8%;
+}
+/* .kontaktheader{
+    margin-top: 6%;
+    font-size: larger;
+} */
+h3{
+    margin-top: 6%;
+    font-size: larger;
+}
+/* .haftungheader{
+    margin-top: 6%;
+    font-size: larger;
+} */
+.containerInhalt div{
+    margin-bottom: 1%;
+}
+.text{
+  
+    line-height: 1.6;
+}
