@@ -10,7 +10,7 @@ import java.util.List;
 @AllArgsConstructor
 @Data
 public class FullRoutesDto {
-    private List<RoutesDto> routesDto;
+    private List<RouteOverview> routeOverview;
 
     private String dayBeforeSelectedDate;
     private String selectedDate;

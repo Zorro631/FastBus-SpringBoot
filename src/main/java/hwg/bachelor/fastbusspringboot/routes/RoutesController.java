@@ -5,14 +5,14 @@ import io.swagger.v3.oas.annotations.Parameter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDate;
 import java.util.List;
 
-@Controller
+@RestController
 public class RoutesController {
 
     @Autowired
@@ -36,7 +36,7 @@ public class RoutesController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Quantity must be greater than zero.");
         }
 
-        List<RoutesDto> availableRoutes = routesService.findRoutesByLocations(departure, destination, date);
+        List<RouteOverview> availableRoutes = routesService.findRoutesByLocations(departure, destination, date);
         FullRoutesDto fullRoutesDto = routesService.fullRoutesDtoResponse(availableRoutes, date);
         return ResponseEntity.ok(fullRoutesDto);
     }

@@ -12,8 +12,7 @@ import java.time.LocalTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class RoutesDto {
-    //TODO routeId kann in FullRoutesDto rein wie alles andere außer Time?
+public class RouteOverview {
     @Schema(description = "Unique identifier for the route", example = "BERHAM")
     private String routeId;
 
